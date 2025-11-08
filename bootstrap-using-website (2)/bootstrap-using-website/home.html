@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Company details Modal -->
+    <div class="modal fade" id="formModel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Company Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="bannerform p-3">
+                        <h3>Company formality</h3>
+                        <p>Firstly fill the details and submit after see the comapany details..</p>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label ">Name</label>
+                            <input type="text" class="form-control" id="name" name="name="
+                                placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone-No</label>
+                            <div class="input-group">
+                                <span class="input-group-text">+91</span>
+                                <input type="number" class="form-control" id="phone_no" name="phone_no"
+                                    placeholder="Enter your mobile number">
+                            </div>
+                        </div>
+                        <div mt-3>
+                            <button name="submit">Register Now</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Company about us -->
+    <div class="modal fade" id="formdata">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Company about us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="bannerform p-3">
+                        <h3>Comapany requirment</h3>
+                        <p>fill the details and see the company status</p>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone-No</label>
+                            <div class="input-group">
+                                <span class="input-group-text">+91</span>
+                                <input type="number" class="form-control" id="phone_no" name="phone_no"
+                                    placeholder="Enter your mobile number">
+                            </div>
+                        </div>
+                        <div mt-3>
+                            <button name="submit">Submit Now</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--header-->
+ <!--  Header Start -->
+<header class="container-fluid py-2 bg-white shadow-lg position-sticky top-0 bannerHeader">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!--  Logo -->
+      <figure class="col-lg-4 col-8 text-lg-start text-start mb-0 bannerlogo">
+        <img src="images/gms-logo.png" alt="GMS-logo" class="img-fluid" style="max-width: 180px;">
+      </figure>
+
+      <!-- Hamburger Button (visible only on mobile) -->
+      <div class="col-4 d-lg-none text-end">
+        <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!--  Navigation Menu (Desktop Only) -->
+      <nav class="col-lg-5 d-none d-lg-block">
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Slider</a></li>
+          <li class="nav-item"><a class="nav-link" href="#highlight">Highlight</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <!--  Buttons -->
+      <div class="col-lg-3 col-12 mt-2 mt-lg-0">
+        <div class="btn-outer d-flex gap-2 justify-content-lg-end justify-content-center align-items-center">
+          <button class="btn btn-success whatsappbtn">
+            <i class="fa-brands fa-whatsapp"></i> Chat with Us
+          </button>
+          <button class="btn btn-primary call">
+            <i class="fa-solid fa-phone"></i> Call Us
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+<!--  Header End -->
+
+
+<!--  Offcanvas Sidebar Menu (Mobile Only) -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body bannerLink">
+    <ul class="navbar-nav text-start">
+      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#skills">Slider</a></li>
+      <li class="nav-item"><a class="nav-link" href="#highlight">Highlight</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+    </ul>
+  </div>
+</div>
+<!--  Offcanvas End -->
+
+
+    <!--section area -->
+    <section id="home" class="container-fluid  py-lg-5 py-sm-4 py-3">
+        <div class="container">
+            <div class="row justify-content-between gy-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="bannerContent ">
+                        <h1>Career Opportunities<br/> In <span>GMS IT</span></h1>
+                        <p>GMS company training so good,you only pay-after-training-full</p>
+                        <ul class="m-0 p-0">
+                            <li class="mb-3"><i class="fa-solid fa-circle-check"></i> Specialization:Performance Your
+                                According</li>
+                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i>Min salary of Rs 4.5 LPA</li>
+                            <li class="mb-3"><i class="fa-solid fa-circle-check"></i> 50 Seat Only</li>
+                        </ul>
+                        <div class="bannerContentbtn d-flex gap-3 ">
+                            <button data-bs-toggle="modal" data-bs-target="#formdata">Company about us</button>
+                            <button data-bs-toggle="modal" data-bs-target="#formModel"><i
+                                    class="fa-solid fa-download"></i>Download company details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <!--user form-->
+                    <form id="applynow" action="insert-data.php" class="bannerform shadow-lg shadow rounded" method ="post">
+                        <h3>Join now this opportunities</h3>
+                        <p>First of all we will teach you the php language from beginner to advanced level..</p>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label ">Name</label>
+                            <input type="text" class="form-control" id="name" name="name"
+                                placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="course" class="form-label">Cousre</label>
+                            <input type="text" class="form-control" id="course" name="course"
+                                placeholder="Enter your course">
+                        </div>
+                        <div class="mb-3">
+                            <label for="batch" class="form-label">Batch</label>
+                            <input type="number" class="form-control" id="batch" name="batch"
+                                placeholder="Enter your batch">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone-No</label>
+                            <div class="input-group">
+                                <span class="input-group-text">+91</span>
+                                <input type="number" class="form-control" id="phone_no" name="phone_no"
+                                    placeholder="Enter your mobile number">
+                            </div>
+                        </div>
+                        <div mt-3>
+                            <button name="submit">Register Now</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--details company-->
+        <div id="details" class="container shadow-lg mt-5 counterSection shadow rounded">
+            <div class="row row-cols-lg-5 row-cols-md-5 row-cols-2 p-4">
+                <div class="col">
+                    <h2>500+</h2>
+                    <p>Student trained</p>
+                </div>
+                <div class="col">
+                    <h2><i class="fa-solid fa-indian-rupee-sign"></i>4.5 LPA</h2>
+                    <p>Student package</p>
+                </div>
+                <div class="col">
+                    <h2>150+</h2>
+                    <p>Recruiting partners</p>
+                </div>
+                <div class="col">
+                    <h2>9:00 AM</h2>
+                    <p>Office time</p>
+                </div>
+                <div class="col">
+                    <h2>1-Jan-2026</h2>
+                    <p>New batch start</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--second section key highlight-->
+    <section id="highlight">
+        <div class="container-fluid py-5 highlightkey">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <h2>Key Highlight of the Internship</h2>
+                        <p>You will be taught from basic to advanced in the company and will be made to do projects and
+                            work live.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4 highlightTag hover">
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="bg-white p-3 d-flex align-items-start gap-3 shadow rounded">
+                            <i class="fa-solid fa-file highlightItem"></i>
+                            <div>
+                                <h4>Projects &<br><span style="color:#8e33f7;"> Modules Tests </span></h4>
+                                <p>Tests Your Knowledge</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="bg-white p-3 d-flex align-items-start gap-3 shadow rounded">
+                            <i class="fa-solid fa-star-half-stroke highlightItem"></i>
+                            <div>
+                                <h4>GMS-Recognized <span style="color:#46ae27;"> Certificate </span></h4>
+                                <p>Stand out to your professional</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="bg-white p-3 d-flex align-items-start gap-3 shadow rounded">
+                            <i class="fa-solid fa-arrow-down highlightItem"></i>
+                            <div>
+                                <h4>Downloadable<br> <span style="color:#3c0df7;">Certificate</span></h4>
+                                <p>Within onetime access</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="bg-white p-3 d-flex align-items-start gap-3 shadow rounded">
+                            <i class="fa-solid fa-bookmark highlightItem"></i>
+                            <div>
+                                <h4>6 e-commarce<br><span style="color:#fb2626;"> level projects</span> </h4>
+                                <p>Get your skills</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="bg-white p-3 d-flex align-items-start gap-3 shadow rounded">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <div>
+                                <h4>Live work on<br><span style="color:#26fba2;"> company projects </span></h4>
+                                <p>Tests your mind skills</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="bg-white p-3 d-flex align-items-start gap-3 shadow rounded">
+                            <i class="fa-solid fa-brain"></i>
+                            <div>
+                                <h4>Daily Reports<br><span style="color:#fb9b26;"> under manager </span></h4>
+                                <p>what did you do all day today </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--third section silder page-->
+    <section id="skills" class="container-fluid py-5" style="background-color:#00CFFF;">
+        <div class="container">
+            <div class="row align-items-center">
+
+
+                <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+                    <h2>Happiness and Grow Your Business</h2>
+                    <p>
+                        Software solutions and web design and development services are offered in Meerut
+                        by one of the fastest-growing businesses, Global Matrix Solution.
+                    </p>
+                </div>
+
+
+                <div class="col-lg-6 col-12 d-flex justify-content-center" id="center">
+                    <div id="carouselExampleControls" class="carousel slide w-75" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded shadow">
+                            <div class="carousel-item active">
+                                <img src="images/dev.avif" class="d-block w-100 rounded" alt="Slide 1" style="height:280px; object-fit:cover;" >
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/devops.jpg" class="d-block w-100 rounded" alt="Slide 2"  >
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/eng.jpg" class="d-block w-100 rounded" alt="Slide 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--fourth section about story-->
+    <section id="about" class="our-Story">
+        <div id="footerid" class=" container-fluid py-5 my-2">
+            <div class="container">
+                <div class="row ">
+                    <div class="col">
+                        <h1>Our Story</h1>
+                        <p>Global Matrix Solution is one of the fastest growing company that have been providing Web
+                            Designing & Development and Software Solutions company in Meerut.
+
+                            Today if some part of your business is not on internet, you are potentially missing out on a
+                            big opportunity. Most of the businesses are rushing to reach out to the world wide audience
+                            via internet (www).
+
+                            A badly designed website or inappropriate internet strategy could reduce your profits and
+                            decrease your ROI. Global Matrix is a full service Web Site Design Firm offering high
+                            quality offshore Web Site Design services at affordable cost. Global Matrix is a leading
+                            full service web site design firm offering the entire range of web design services to global
+                            clients.
+
+                            Our services cover the Complete Lifecycle of your Web Initiative which includes Web
+                            Application Development Website design re-design, Content Management and Web Site
+                            Maintenance and Support. Global Matrix Solution provides Client specific Business Solution
+                            quickly at affordable cost which accelerates your time to market. Global Matrix offers Web
+                            Application Development, Web Design/Redesign, Dynamic Web Site Development, and Custom Web
+                            site Development, Web site maintenance to Small and Big Organizations. Our professionals
+                            have proven industry and technical experience and use Global Matrixing techniques and
+                            standard methodologies to provide innovative Solution in time. Our mission at Global Matrix
+                            is to provide Quality Solution and Services efficiently so that the client can achieve their
+                            Business Goals.
+
+                            We strive for long term relationship with our clients through our focus on Customer
+                            Satisfaction, commitment to Quality and exceeding Customer Expectations. Most of our
+                            relationships begins with a project and prospers to a long-term Strategic Business
+                            Partnership, with Global Matrix sharing similar risks and investing in building
+                            capabilities. Our Iterative Development Methodology ensures timely delivery with highest
+                            quality. We have flexible Process Framework which allows our clients to have as much or as
+                            little control of your web project. Our methodologies and framework along with high class
+                            Communication and IT infrastructure allows us to provide high quality Solution quickly. We
+                            keep exceeding customer expectations and show a high level of customer satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer contact filed-->
+    <footer class="footer-bottom">
+        <section id="contact" class="container-fluid shadow-lg shadow rounded py-lg-5 py-sm-4 py-3">
+            <div class="container">
+                <div class="row justify-content-between gy-4 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="aboutgms">
+                            <h2>Quick Links</h2> 
+                            <div class="nav">
+                            <ul class="m-0 p-0 ">
+                                <li class="mb-0"><a class="nav-link" href="#home">Home</a></li>
+                                <li class="mb-0"><a href="#skills"  class="nav-link">Services</a></li>
+                                <li class="mb-0"><a href="#details" class="nav-link">Career</a></li>
+                                <li class="mb-0"><a href="#contact" class="nav-link">Contact</a></li>
+                                <li class="mb-0"><a href="#applynow" class="nav-link">Apply Now</a></li>
+                                
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-lg-4">
+                        <div class="aboutgms">
+                            <h2>Services</h2> 
+                            <div class="nav">
+                            <ul class="m-0 p-0 ">
+                                <li class="mb-0"><a class="nav-link" href="#">Web Development</a></li>
+                                <li class="mb-0"><a href="#" class="nav-link" >Mobile Application</a></li>
+                                <li class="mb-0"><a href="#" class="nav-link" >Internet Marketing</a></li>
+                                <li class="mb-0"><a href="#" class="nav-link" >Web Designing</a></li>
+                                <li class="mb-0"><a href="#" class="nav-link" >Salesforce Consulting</a></li>
+                                
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-lg-4">
+                        <div class="aboutgms">
+                            <h2>Contact Us</h2> 
+                            <div class="nav">
+                            <ul class="m-0 p-0 ">
+                                <li class="mb-0"><a class="nav-link" href="#">Phone:+919837457543,<br>+918077370180</a></li>
+                                <li class="mb-0"><a href="#" class="nav-link" >globalmatrixsolution@gmail.com</a></li>
+                                <li class="mb-0"><a href="#" class="nav-link" >First Floor Office No. 11 S2S</a></li>
+                                <li class="mb-0"><a href="#" class="nav-link" >Aspire, Garh Road, Meerut City,</a></li>
+                                <li class="mb-0"><a href="#" class="nav-link" >Next to Shorab Gate</a></li>
+                                
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+        </section>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+*{
+    font-family: "Inter", sans-serif;
+}
+header {
+  position: relative;
+  z-index: 10;
+}
+/* slider*/
+.carousel {
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.whatsappbtn i{
+    color: #3dae27;
+}
+.whatsappbtn:hover{
+    border:  1px solid #27AE60;
+}
+
+.bannerContent h1{
+    font-size: 48px;
+    font-weight: 700;
+
+}
+.bannerContent h1 span{
+    color: #2699FB;
+}
+.btn-outer {
+    gap: 0.5rem;
+}
+
+/* header both button*/
+.whatsappbtn, .call {
+    transition: all 0.3s ease; 
+}
+.bannerContent p{
+    font-size: 20px;
+
+}
+.bannerContent ul{
+    list-style: none;
+}
+.bannerContent ul li{
+    font-size: 20px;
+}
+.bannerContent ul li i{
+    color: #2699FB;
+}
+.bannerContentbtn button{
+    width: 50%;
+    padding: 5px 0px;
+    border-radius: 4px;
+}
+.bannerContentbtn button:hover{
+    border:  1px solid #27AE60;
+}
+
+.bannerContentbtn button:first-child{
+    color: white;
+    background: linear-gradient(to right,#0ACEFE,#2699FB);
+    
+}
+/* form-control*/
+.bannerform{
+    padding: 40px;
+    border-radius: round;
+}
+.bannerform h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.bannerform button{
+    width: 100%;
+    padding: 10px 0px;
+    background: linear-gradient(to right,#0ACEFE,#2699FB);
+    border: none;
+    color: white;
+
+}
+
+.counterSection h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #2699FB;
+
+
+}
+.highlightkey h2{
+    font-weight: 700;
+}
+.highlightItem i{
+    background-color: #2699FB;
+}
+.highlightItem h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.highlightItem p{
+    font-size: 15px;
+}
+
+ .aboutUS h3{
+    font-size: 25px;
+    font-weight: 700;
+
+ }
+ .aboutUS p{
+    font-size: 15px;
+ }
+ 
+
+  .aboutgms h2{
+    font-size: 30px;
+    font-weight: 700;
+
+  }
+  .aboutgms ul{
+    list-style: none;
+  }
+
+  
+  /* Base box style */
+.highlightTag .col-lg-4 > div {
+  background-color: #ffffff;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Hover effect with !important to override Bootstrap */
+.highlightTag .col-lg-4 > div:hover {
+  background-color: #1d94e3 !important; 
+  color: #fff !important;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Change text and icon color on hover */
+.highlightTag .col-lg-4 > div:hover h4,
+.highlightTag .col-lg-4 > div:hover p,
+.highlightTag .col-lg-4 > div:hover i {
+  color: #fff !important;
+}
+
+/* Default icon color */
+.highlightItem {
+  font-size: 30px;
+  color: #1d94e3;
+  transition: color 0.3s ease;
+}
+
+
+.footer-bottom {
+  background-color: #0d6efd;
+  background-image: radial-gradient(#ffffff33 1px, transparent 1px);
+  background-size: 20px 20px;
+  /* color: white; */
+  padding: 40px 0;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+.our-Story{
+   background-color: #0da5fd;
+   background-image: radial-gradient(#ffffffee 1px, transparent 1px);
+   background-size: 20px 20px;
+   padding: 40px 0;
+   margin: 2px;
+}
+
+.bannerHeader a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* .footer-bottom {
+    background-color: #0033cc; 
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+} */
+
+
+
